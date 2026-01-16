@@ -1,0 +1,30 @@
+/* Point 6: Responsive Design */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; border-bottom: 1px solid #ccc; }
+.logo-img { height: 45px; }
+nav a { text-decoration: none; color: black; padding: 5px 15px; border: 1px solid #000; margin-left: 5px; font-size: 14px; }
+
+.hero, .headquarter, .profile-section, .message-us { padding: 40px 5%; }
+.banner-container { width: 100%; border: 1px solid #000; margin-top: 20px; overflow: hidden; }
+.banner-img { width: 100%; height: 350px; object-fit: cover; display: block; }
+
+.hq-container { display: flex; gap: 40px; justify-content: center; margin-top: 20px; }
+.circle { width: 120px; height: 120px; border-radius: 50%; border: 1px solid #000; overflow: hidden; }
+.circle img { width: 100%; height: 100%; object-fit: cover; }
+.hq-item { text-align: center; }
+
+.profile-content { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.vm-box { border: 1px solid #ddd; padding: 15px; background: #fefefe; }
+
+.flex-container { display: flex; gap: 40px; }
+form { flex: 1; }
+.form-group { display: flex; margin-bottom: 15px; align-items: center; }
+.form-group label { width: 120px; }
+.form-group input, .form-group textarea { flex: 1; padding: 8px; border: 1px solid #000; }
+.output-box { flex: 1; border: 1px solid #000; padding: 20px; background: #fff; }
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    header { flex-direction: column; gap: 10px; }
+    .hq-container, .flex-container, .profile-content { flex-direction: column; grid-template-columns: 1fr; }
+}
